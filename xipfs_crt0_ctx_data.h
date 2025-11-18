@@ -27,14 +27,6 @@ typedef struct xipfs_crt0_ctx_data_s {
      */
     char *argv[XIPFS_EXEC_ARGC_MAX];
     /*
-     * Table of function pointers for functions used by CRT0 and/or stdriot.
-     */
-    const void **syscall_table;
-    /**
-     * When using xipfs_file_safe_exec, syscalls results will be written here.
-     */
-    int syscall_result;
-    /*
      * RIOT's Global Offset Table
      */
     const void *former_got;
