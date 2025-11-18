@@ -227,6 +227,9 @@ Pip_mapMPU(
 	register uint32_t r1 __asm__("r1");
 	register uint32_t r2 __asm__("r2");
 
+	if (mpuRegionNb >= 6)
+		return 0;
+
 	r0 = (uint32_t) partDescBlockId;
 	r1 = (uint32_t) blockToMapLocalId;
 	r2 = (uint32_t) mpuRegionNb;
