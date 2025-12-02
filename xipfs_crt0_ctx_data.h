@@ -19,6 +19,10 @@ typedef struct xipfs_crt0_ctx_data_s {
      */
     unsigned char is_safe_call;
     /*
+     * Table of function pointers for functions used by stdriot.
+     */
+    void **syscall_table;
+    /*
      * Number of arguments passed to the relocatable binary.
      */
     int argc;

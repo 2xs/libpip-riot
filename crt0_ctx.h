@@ -26,10 +26,6 @@ typedef struct crt0_ctx_s {
      * End address of the free NVM
      */
     void *nvm_end;
-    /*
-     * Table of function pointers for functions used by CRT0 and/or stdriot.
-     */
-    void **syscall_table;
     /**
      * Arguments passed to the relocatable binary.
      * This is up to caller and callee to agree on a common arguments type.
